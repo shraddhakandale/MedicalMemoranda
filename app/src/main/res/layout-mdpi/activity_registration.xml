@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgreg"
+    tools:context=".Registration">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="319dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="319dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date of birth (DD/MM/YY)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+        <EditText
+            android:id="@+id/Adhaaridnum"
+            android:layout_width="319dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Adhaar card number"
+            android:maxLength="12"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+        <EditText
+            android:id="@+id/mobnum"
+            android:layout_width="319dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:hint="Mobile number"
+            android:maxLength="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Adhaaridnum" />
+
+        <EditText
+            android:id="@+id/bgrp"
+            android:layout_width="319dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Bloodgroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobnum" />
+
+        <TextView
+            android:id="@+id/diseaseheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="25dp"
+            android:text="Diseases"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bgrp" />
+
+        <TextView
+            android:id="@+id/allergyheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Allergies"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/diseaseheading"
+
+            app:layout_constraintTop_toBottomOf="@+id/bgrp" />
+
+        <TextView
+            android:id="@+id/symptomesheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Symptomes"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/allergyheading"
+            app:layout_constraintTop_toBottomOf="@+id/bgrp"
+            />
+
+        <EditText
+            android:id="@+id/disease1hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="25dp"
+            android:inputType="textPersonName"
+            android:hint="disease1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diseaseheading" />
+
+        <EditText
+            android:id="@+id/disease2hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="disease2"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disease1hint" />
+
+        <EditText
+            android:id="@+id/disease3hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="disease3"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disease2hint" />
+
+        <EditText
+            android:id="@+id/disease4hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="disease4"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disease3hint" />
+
+        <EditText
+            android:id="@+id/allergy1hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:inputType="textPersonName"
+            android:hint="allergy1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/disease1hint"
+            app:layout_constraintTop_toBottomOf="@+id/allergyheading" />
+
+        <EditText
+            android:id="@+id/allergy2hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="allergy2"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/disease2hint"
+            app:layout_constraintTop_toBottomOf="@+id/allergy1hint" />
+
+        <EditText
+            android:id="@+id/allergy3hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="allergy3"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/disease3hint"
+            app:layout_constraintTop_toBottomOf="@+id/allergy2hint" />
+
+        <EditText
+            android:id="@+id/symptom1hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:inputType="textPersonName"
+            android:hint="symptom1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/allergy1hint"
+            app:layout_constraintTop_toBottomOf="@+id/symptomesheading" />
+
+        <EditText
+            android:id="@+id/symptom2hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="symptom2"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/allergy2hint"
+            app:layout_constraintTop_toBottomOf="@+id/symptom1hint" />
+
+        <EditText
+            android:id="@+id/symptom3hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="symptom3"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/allergy3hint"
+            app:layout_constraintTop_toBottomOf="@+id/symptom2hint" />
+
+        <Button
+            android:id="@+id/Registerbtn"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/custom_show_button"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/disease4hint"
+            app:layout_constraintTop_toBottomOf="@+id/allergy3hint"
+            app:layout_constraintVertical_bias="0.375" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

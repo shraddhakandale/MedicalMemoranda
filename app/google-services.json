@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "631874334958",
+    "firebase_url": "https://smartpatient-e60a3.firebaseio.com",
+    "project_id": "smartpatient-e60a3",
+    "storage_bucket": "smartpatient-e60a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631874334958:android:895370ff36bdbc5702c3ff",
+        "android_client_info": {
+          "package_name": "com.sk.miniprojecttrial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631874334958-ii415uagl9j56q685gocorm6q0anob0b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sk.miniprojecttrial",
+            "certificate_hash": "8e4fe232a50f168d44f30ae5d14dc8d2ab057836"
+          }
+        },
+        {
+          "client_id": "631874334958-v6beeh8prkd78c6cq4ft114flln0s6e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqYe9ShYYiHveI0ySEQYV42DNRK4uczL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631874334958-v6beeh8prkd78c6cq4ft114flln0s6e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

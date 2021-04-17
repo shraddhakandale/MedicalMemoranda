@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qrcode">
+
+    <Button
+        android:id="@+id/genqrbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_regmain_btn"
+        android:text="Generate Card"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="300dp"
+        app:layout_constraintTop_toBottomOf="@+id/genqrbutton"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/custom_card"
+            android:visibility="invisible"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Name"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/namefix"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/nametxt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Date of Birth"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/dobfix"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/dobtxt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Bloodgroup"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/bgrpfix"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/bgrptxt"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                android:id="@+id/qrimg"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/getadnumtv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="544dp"
+        android:text="123456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
